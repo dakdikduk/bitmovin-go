@@ -4,9 +4,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/models"
 	"strings"
+
+	"github.com/dakdikduk/bitmovin-go/bitmovin"
+	"github.com/dakdikduk/bitmovin-go/models"
 )
 
 type DrmService struct {

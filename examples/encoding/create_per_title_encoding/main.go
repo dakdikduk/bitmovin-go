@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/bitmovintypes"
-	"github.com/bitmovin/bitmovin-go/models"
-	"github.com/bitmovin/bitmovin-go/services"
+	"github.com/dakdikduk/bitmovin-go/bitmovin"
+	"github.com/dakdikduk/bitmovin-go/bitmovintypes"
+	"github.com/dakdikduk/bitmovin-go/models"
+	"github.com/dakdikduk/bitmovin-go/services"
 )
 
 const (

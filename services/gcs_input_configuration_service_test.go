@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/models"
+	"github.com/dakdikduk/bitmovin-go/bitmovin"
+	"github.com/dakdikduk/bitmovin-go/models"
 )
 
 const apiKey = "INSERT_API_KEY"
