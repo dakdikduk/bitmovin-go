@@ -16,7 +16,7 @@ func main() {
 	zixiInput := &models.ZixiInput{
 		Name:   stringToPtr("My test Zixi Input"),
 		Host:   stringToPtr("test.com"),
-		Port:   intToPtr(2088),
+		Port:   int64ToPtr(2088),
 		Stream: stringToPtr("test-stream"),
 	}
 
@@ -32,5 +32,9 @@ func stringToPtr(s string) *string {
 }
 
 func intToPtr(i int) *int {
+	return &i
+}
+
+func int64ToPtr(i int64) *int64 {
 	return &i
 }

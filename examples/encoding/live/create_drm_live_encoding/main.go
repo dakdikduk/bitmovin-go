@@ -223,11 +223,11 @@ func main() {
 		Widevine and Playready CENC DRM
 	*/
 	fmt.Println("Creating Widevine and PlayReady CENC DRMs...")
-	widevine := models.WidevineCencDrm{
+	widevine := &models.WidevineCencDrm{
 		PSSH: stringToPtr("WIDEVINE_PSSH"),
 	}
 
-	playready := models.PlayReadyCencDrm{
+	playready := &models.PlayReadyCencDrm{
 		LaURL: stringToPtr("PLAYREADY_LA_URL"),
 	}
 
