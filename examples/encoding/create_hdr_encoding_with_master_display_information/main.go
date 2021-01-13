@@ -50,7 +50,7 @@ func main() {
 	encoding := &models.Encoding{
 		Name:           stringToPtr("HDR Master Display Information Encoding"),
 		CloudRegion:    bitmovintypes.CloudRegionGoogleEuropeWest1,
-		EncoderVersion: "STABLE",
+		EncoderVersion: stringToPtr("STABLE"),
 	}
 	encodingResp, err := encodingS.Create(encoding)
 	errorHandler(err)
