@@ -5,10 +5,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/bitmovin/bitmovin-go/bitmovin"
-	"github.com/bitmovin/bitmovin-go/bitmovintypes"
-	"github.com/bitmovin/bitmovin-go/models"
-	"github.com/bitmovin/bitmovin-go/services"
+	"github.com/dakdikduk/bitmovin-go/bitmovin"
+	"github.com/dakdikduk/bitmovin-go/bitmovintypes"
+	"github.com/dakdikduk/bitmovin-go/models"
+	"github.com/dakdikduk/bitmovin-go/services"
 )
 
 const (
@@ -223,11 +223,11 @@ func main() {
 		Widevine and Playready CENC DRM
 	*/
 	fmt.Println("Creating Widevine and PlayReady CENC DRMs...")
-	widevine := models.WidevineCencDrm{
+	widevine := &models.WidevineCencDrm{
 		PSSH: stringToPtr("WIDEVINE_PSSH"),
 	}
 
-	playready := models.PlayReadyCencDrm{
+	playready := &models.PlayReadyCencDrm{
 		LaURL: stringToPtr("PLAYREADY_LA_URL"),
 	}
 

@@ -1,6 +1,6 @@
 package models
 
-import "github.com/bitmovin/bitmovin-go/bitmovintypes"
+import "github.com/dakdikduk/bitmovin-go/bitmovintypes"
 
 type PlayReadyDrm struct {
 	ID          *string                        `json:"id,omitempty"`
@@ -63,6 +63,9 @@ type FairPlayCencDrm struct {
 	URI *string `json:"uri,omitEmpty"`
 }
 
+type MarlinCencDrm struct {
+}
+
 type CencDrm struct {
 	ID                      *string                `json:"id,omitempty"`
 	Name                    *string                `json:"name,omitempty"`
@@ -73,6 +76,7 @@ type CencDrm struct {
 	Outputs                 []Output               `json:"outputs,omitempty"`
 	Widevine                *WidevineCencDrm       `json:"widevine,omitempty"`
 	PlayReady               *PlayReadyCencDrm      `json:"playReady,omitEmpty"`
+	Marlin                  *MarlinCencDrm         `json:"marlin,omitempty"`
 	FairPlay                *FairPlayCencDrm       `json:"fairPlay,omitEmpty"`
 	IvSize                  bitmovintypes.IvSize   `json:"ivSize,omitEmpty"`
 	EnablePiffCompatibility *bool                  `json:"enablePiffCompatibility,omitEmpty"`
